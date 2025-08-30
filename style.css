@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.work-sans-subtext {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+* {
+    margin: 0;
+}
+
+:root {
+    --green-hero: #B5D94D;
+    --dark-green-text: #33653B;
+    --subtle-green-text: #6D6C4F;
+}
+
+.hero-outer { background-color: var(--green-hero); }
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+    padding-left: clamp(50px, 20vw, 200px);
+    padding-right: clamp(50px, 20vw, 200px);
+    padding-top: clamp(48px, 10vw, 90px);
+    padding-bottom: clamp(24px, 10vw, 45px);
+
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.hero-text {
+    flex: 1 1 420px;
+}
+
+.hero-heading {
+    margin-top: 24px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: clamp(36px, 5vw, 52px);
+    line-height: 1.1;
+    color: var(--dark-green-text);
+}
+
+.hero-subtext {
+    font-size: clamp(16px, 2.2vw, 20px);
+    margin-top: 16px;
+    font-family: "Work Sans", sans-serif;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: var(--subtle-green-text);
+}
+
+.hero-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+.icon-button {
+    display: inline-grid;
+    place-items: center;
+    width: 50px; height: 50px;
+    color: #3F5500;
+    outline: none;
+}
+.icon-button:hover {
+    color: #EAF5CB;
+    transition: color .12s;
+}
+.icon-button:focus-visible {
+    outline: 3px solid #fff;
+    outline-offset: 2px;
+    border-radius: 8px;
+}
+
+
+.hero-img {
+    display: flex;
+    justify-content: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.hero-img img {
+    border-radius: 50%;
+}
+
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
