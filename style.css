@@ -154,14 +154,16 @@
 
 .p {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
-
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .p-img {
+    display: flex;
     flex: 0 0 300px;
 }
 .p-img img {
@@ -179,6 +181,7 @@
 
 .p-title {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
 }
 
 .year-and-techstack {
@@ -188,12 +191,14 @@
     margin-top: 5px;
     margin-bottom: 5px;
     gap: 15px;
+    row-gap: 5px;
 
     flex-wrap: wrap;
 }
 
 .p-description {
     font-family: "Work Sans", sans-serif;
+    margin-bottom: 7px;
 }
 
 .p-links ul {
