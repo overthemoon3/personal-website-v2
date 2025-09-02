@@ -27,8 +27,8 @@
     justify-content: center;
     align-items: center;
     
-    padding-left: clamp(50px, 20vw, 200px);
-    padding-right: clamp(50px, 20vw, 200px);
+    padding-left: clamp(16px, 6vw, 200px);
+    padding-right: clamp(16px, 6vw, 200px);
     padding-top: clamp(48px, 10vw, 90px);
     padding-bottom: clamp(24px, 10vw, 45px);
 
@@ -105,8 +105,8 @@
 .skills {
     background-color:#F6FBEA;
     
-    padding-left: clamp(50px, 20vw, 200px);
-    padding-right: clamp(50px, 20vw, 200px);
+    padding-left: clamp(16px, 6vw, 200px);
+    padding-right: clamp(16px, 6vw, 200px);
     padding-top: clamp(24px, 10vw, 45px);
     padding-bottom: clamp(24px, 10vw, 45px);
 
@@ -137,10 +137,10 @@
 
     justify-content: center;
 
-    padding-left: clamp(50px, 20vw, 200px);
-    padding-right: clamp(50px, 20vw, 200px);
-    padding-top: clamp(24px, 10vw, 45px);
-    padding-bottom: clamp(48px, 10vw, 90px);
+    padding-left: clamp(16px, 6vw, 200px);
+    padding-right: clamp(16px, 6vw, 200px);
+    padding-top: clamp(16px, 6vw, 45px);
+    /* padding-bottom: clamp(16px, 6vw, 45px); */
 
     max-width: 1200px;
     margin: 0 auto;
@@ -156,20 +156,24 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: clamp(12px, 4vw, 30px);
     flex-wrap: wrap;
+
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
 .p-img {
     display: flex;
-    flex: 0 0 300px;
+    flex: 0 0 min(300px, 100%);
+    justify-content: center;
+    align-items: center;
 }
 .p-img img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    max-width: 300px;
 }
 
 .p-text {
@@ -218,8 +222,9 @@
     font-family:'Franklin Gothic', 'Arial Narrow', Arial, sans-serif
 }
 
-
-
+.footer {
+    padding-bottom: clamp(32px, 10vw, 70px);
+}
 
 
 @media (prefers-reduced-motion: reduce) {
