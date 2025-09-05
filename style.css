@@ -16,7 +16,15 @@
 :root {
     --green-hero: #b6d94def;
     --dark-green-text: #33653B;
+    --icon-color: #3F5500;
+    --black-text: #11302F;
     --subtle-green-text: #6D6C4F;
+    --light-green: #EAF5CB;
+    --very-light-green: #F6FBEA;
+
+    --yellow-accent: #F7EE80;
+    --purple-accent: #DFD6F2;
+
 }
 
 .hero-outer { background-color: var(--green-hero); }
@@ -74,11 +82,11 @@
     display: inline-grid;
     place-items: center;
     width: 50px; height: 50px;
-    color: #3F5500;
+    color: var(--icon-color) ;
     outline: none;
 }
 .icon-button:hover {
-    color: #EAF5CB;
+    color: var(--very-light-green);
     transition: color .12s;
 }
 .icon-button:focus-visible {
@@ -98,12 +106,12 @@
 }
 
 .skills-outer {
-    background-color:#F6FBEA;
+    background-color: var(--light-green);
 }
 
 
 .skills {
-    background-color:#F6FBEA;
+    background-color: var(--light-green);
     
     padding-left: clamp(16px, 6vw, 200px);
     padding-right: clamp(16px, 6vw, 200px);
@@ -114,6 +122,7 @@
     margin: 0 auto;
 
     font-family: 'Courier New', Courier, monospace;
+    color: var(--subtle-green-text)
     
 }
 
@@ -127,7 +136,7 @@
 }
 
 .projects-outer {
-    background-color: #EAF5CB;
+    background-color: var(--very-light-green);
 }
 
 .projects {
@@ -150,6 +159,7 @@
     display: flex;
     font-family: 'Courier New', Courier, monospace;
     margin-bottom: 20px;
+    color: var(--subtle-green-text)
 }
 
 .p {
@@ -159,8 +169,9 @@
     gap: clamp(12px, 4vw, 30px);
     flex-wrap: wrap;
 
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: var(--black-text);
 }
 
 .p-img {
@@ -186,6 +197,7 @@
 .p-title {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-style: italic;
+    font-size: 25px;
 }
 
 .year-and-techstack {
@@ -198,6 +210,18 @@
     row-gap: 5px;
 
     flex-wrap: wrap;
+}
+
+.p-techstack {
+    background-color: var(--purple-accent);
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.year {
+    background-color: var(--yellow-accent);
+    padding: 5px;
+    border-radius: 4px;
 }
 
 .p-description {
@@ -225,7 +249,6 @@
 .footer {
     padding-bottom: clamp(32px, 10vw, 70px);
 }
-
 
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
