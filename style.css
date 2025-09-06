@@ -122,7 +122,6 @@
     margin: 0 auto;
 
     font-family: 'Courier New', Courier, monospace;
-    color: var(--subtle-green-text)
     
 }
 
@@ -159,7 +158,6 @@
     display: flex;
     font-family: 'Courier New', Courier, monospace;
     margin-bottom: 20px;
-    color: var(--subtle-green-text)
 }
 
 .p {
@@ -246,9 +244,36 @@
     font-family:'Franklin Gothic', 'Arial Narrow', Arial, sans-serif
 }
 
+.p-more summary {
+    list-style: none;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: underline;
+    outline: none;
+    font-family: "Work Sans";
+}
+.p-more summary::-webkit-details-marker {display: none; }
+
+.p-more .label-less {display: none}
+.p-more[open] .label-more {display: none}
+.p-more[open] .label-less {display: inline;}
+
+.p-more-body {
+  margin-top: 8px;
+}
+.p-more[open] .p-more-body {
+  animation: smooth-reveal 160ms ease-out;
+}
+@keyframes smooth-reveal {
+  from { opacity: 0; transform: translateY(-2px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
 .footer {
     padding-bottom: clamp(32px, 10vw, 70px);
 }
+
+
 
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; }
