@@ -261,9 +261,7 @@
 .p-more-body {
   margin-top: 8px;
 }
-.p-more[open] .p-more-body {
-  animation: smooth-reveal 160ms ease-out;
-}
+
 @keyframes smooth-reveal {
   from { opacity: 0; transform: translateY(-2px); }
   to   { opacity: 1; transform: translateY(0); }
